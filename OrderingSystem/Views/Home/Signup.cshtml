@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewData["Title"] = "Registration Page";
+}
+<div class="text-center">
+    <h1 class="display-4" align="center">@ViewData["Title"]</h1>
+    <div>
+        <form method="post" action="/home/save">
+            <div class=" row">
+                <div class="col-sm-3">
+                    First Name:
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="firstname" id="firstname" />
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-3">
+                    Last Name:
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="lastname" id="lastname" />
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-3">
+                    User Address:
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="useradd" id="useradd" />
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-3">
+                    Email-ID:
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="email-id" id="email-id" />
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-3">
+                    User Password:
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="userpass" id="userpass" />
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-3">
+                    Date of Birth:
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="dob" id="dob" />
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-3">
+                    City:
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="city" id="city" />
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-3">
+                    Zipcode:
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="zipcode" id="zipcode" />
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-3">
+                    State:
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="state" id="state" />
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <!--<button type="submit" class="btn btn-primary">Login</button>-->
+            </div>
+            <div>
+                <span class="text-center">@ViewData["Error"]</span>
+
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+<!-- <div class="text-center">
+ </div> -->
